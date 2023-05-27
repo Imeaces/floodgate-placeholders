@@ -91,6 +91,13 @@ public class FloodgateExpansion extends PlaceholderExpansion implements Configur
                 } else {
                     return config.getXboxXuid().getNone(player);
                 }
+            
+            case "assert_player":
+                if (floodgatePlayer != null) {
+                    return "true";
+                } else {
+                    return "false";
+                }
         }
 
         return null;
